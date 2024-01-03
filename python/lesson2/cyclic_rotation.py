@@ -1,5 +1,5 @@
 
-def shiftElements(A, K):
+def shift_elements(A, K):
     R = K % len(A)
 
     second = A[len(A)-R:]
@@ -15,5 +15,5 @@ def solution(A, K):
     if len(set(A)) == 1 or len(A) == K:
         return A
 
-    return shiftElements(A, K)
+    return shift_elements(A, K)
     
